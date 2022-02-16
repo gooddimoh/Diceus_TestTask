@@ -30,6 +30,7 @@ class FootballController extends Controller
 
 
     }
+
     public function playnext()
     {
 
