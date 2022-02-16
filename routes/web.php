@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FootballController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +14,9 @@ use App\Http\Controllers\FootballController;
 |
 */
 
-echo "echo";
-die("ed");
-Route::get('/',function (){
-    return "page";
+
+Route::get('/', function () {
+    echo "page";
 });
 Route::get('/2', [FootballController::class, 'index']);
 Route::get('/game-result', [FootballController::class, 'index']);
