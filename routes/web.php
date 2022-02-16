@@ -13,11 +13,11 @@ use App\Http\Controllers\FootballController;
 |
 */
 
-Route::get('/game-result2', function () {
-    return null;
-});
 
-Route::get('/', [FootballController::class, 'index']);
+Route::get('/',function (){
+    return "page";
+});
+Route::get('/2', [FootballController::class, 'index']);
 Route::get('/game-result', [FootballController::class, 'index']);
 Route::get('/playbutton', [FootballController::class, 'playbutton']);
 
