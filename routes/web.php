@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\FootballController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/game-result2', function () {
+    return null;
 });
+
+Route::get('/game-result', [FootballController::class, 'index']);
+Route::get('/playbutton', [FootballController::class, 'playbutton']);
+
+//Route::get('/game-result', function () {
+//    return view('welcome');
+//});
