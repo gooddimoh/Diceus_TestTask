@@ -10,8 +10,7 @@ class FootballController extends Controller
 
     public function index()
     {
-        $data = $this->getdatafromlink();
-        return view('result', $data);
+        return view('result');
     }
 
     public function result()
@@ -41,11 +40,6 @@ class FootballController extends Controller
     {
         $link = 'https://www.premierleague.com/tables?team=FIRST';
         $data = file_get_contents($link);
-        var_dump($data);
-        die('data');
-        return $data;
-        $this->validate();
-        self::validate();
     }
 
 }
