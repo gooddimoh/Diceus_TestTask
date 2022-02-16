@@ -3,7 +3,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Illuminate\Http\File;
 
 class FootballController extends Controller
 {
@@ -16,7 +15,6 @@ class FootballController extends Controller
     public function result()
     {
 
-
         $arr = [];
 
         $result = ['name' => 'Abigail', 'state' => 'CA'];
@@ -24,15 +22,13 @@ class FootballController extends Controller
         return response()->json($result);
     }
 
-    public function playbutton()
+    public function playall()
     {
-
 
     }
 
-    public function playnext()
+    public function nextweek()
     {
-
 
     }
 

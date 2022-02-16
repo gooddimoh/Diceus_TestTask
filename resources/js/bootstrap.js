@@ -26,10 +26,4 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
-const xhttp = new XMLHttpRequest();
-xhttp.onload = function () {
-    document.getElementById("demo").innerHTML = this.responseText;
-}
-xhttp.open("GET", "./txt/ajax_info.txt", true);
-xhttp.send();
-alert("ok");
+

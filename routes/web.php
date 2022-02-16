@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FootballController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,14 +12,12 @@ use App\Http\Controllers\FootballController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
-Route::get('/', function () {
-    echo "page";
-});
-Route::get('/2', [FootballController::class, 'index']);
 Route::get('/game-result', [FootballController::class, 'index']);
-Route::get('/playbutton', [FootballController::class, 'playbutton']);
+
+
+Route::get('/', [FootballController::class, 'index']);
+Route::get('/play-all', [FootballController::class, 'playall']);
+Route::get('/next-week', [FootballController::class, 'nextweek']);
 
 //Route::get('/game-result', function () {
 //    return view('welcome');

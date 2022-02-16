@@ -404,91 +404,173 @@
     class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
     <div class="max-w-12xl mx-auto sm:px-12 lg:px-12">
         <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow ">
-            <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="table">
-                    <div class="result">
-                        <table>
-                            <thead>
-                            <tr>
-                                <th colspan="2">League Table</th>
-                                <th colspan="2">Match Results</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Teams</td>
-                                <td>PTS</td>
-                                <td>P</td>
-                                <td>W</td>
-                                <td>D</td>
-                                <td>L</td>
-                                <td>GD</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <input type="text" value="Play All">
-                        <input type="text" value="Next Week">
+            <div class="grid grid-cols-1 md:grid-cols-2 background">
+                <div class="result">
+                    <div class="tables">
+                        <div class="col">
+                            <table class="table">
+                                <caption>League Table</caption>
+                                <thead>
+                                <tr>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Teams</td>
+                                    <td>PTS</td>
+                                    <td>P</td>
+                                    <td>W</td>
+                                    <td>D</td>
+                                    <td>L</td>
+                                    <td>GD</td>
+                                </tr>
+                                <tr>
+                                    <td>Chelsea</td>
+                                    <td>10</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>Arsenal</td>
+                                    <td>8</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Manchester City</td>
+                                    <td>8</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Liverpool</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col">
+                            <table class="table">
+                                <caption>Match Results</caption>
+                                <thead>
+                                <tr>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Chlsea</td>
+                                    <td>3-2</td>
+                                    <td>Liverpool</td>
+                                </tr>
+                                <tr>
+                                    <td>Arsenal</td>
+                                    <td>3-3</td>
+                                    <td>Manchester City</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <div class="predict-result-1">
-                        <table>
-                            <thead>
-                            <tr>
-                                <th colspan="2">League Table</th>
-                                <th colspan="2">Match Results</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Teams</td>
-                                <td>PTS</td>
-                                <td>P</td>
-                                <td>W</td>
-                                <td>D</td>
-                                <td>L</td>
-                                <td>GD</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <div class="inputs">
+                        <input id="play-all" type="button" value="Play All">
+                        <input id="next-week" type="button" value="Next Week">
                     </div>
-                    <div class="predict-result-2">
-                        <table>
-                            <thead>
-                            <tr>
-                                <th colspan="2">League Table</th>
-                                <th colspan="2">Match Results</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Teams</td>
-                                <td>PTS</td>
-                                <td>P</td>
-                                <td>W</td>
-                                <td>D</td>
-                                <td>L</td>
-                                <td>GD</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                </div>
+                <div class="predict-result-2">
+                    <table class="table-result">
+                        <caption>4 Week Predictions fo Championship</caption>
+                        <thead>
+                        <tr>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td width="100px">Chelsea</td>
+                            <td></td>
+                            <td>%45</td>
+                        </tr>
+                        <tr>
+
+                            <td width="100px">Arsenal</td>
+                            <td></td>
+                            <td>%25</td>
+                        </tr>
+                        <tr>
+
+                            <td width="100px">Manchester City</td>
+                            <td></td>
+                            <td>%25</td>
+                        </tr>
+                        <tr>
+                            <td width="100px">Liverpool</td>
+                            <td></td>
+                            <td>%5</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow ">
-            Result
-        </div>
+    </div>
 </div>
+<style type="text/css">
+    .table {
+        margin: 20px;
+        background-color: white;
+    }
+
+    .background {
+        background-color: gainsboro;
+    }
+
+    .inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .inputs {
+        margin: 12px;
+    }
+
+    table {
+        border: 1px solid gray;
+    }
+
+    .table-result {
+        border: none;
+        background-color: white;
+        margin-left: 140px;
+    }
+
+    .tables {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+</style>
 </body>
 </html>
