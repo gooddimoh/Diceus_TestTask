@@ -13,31 +13,30 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('Teams', function (Blueprint $table) {
+        Schema::create('teams', function (Blueprint $table) {
             $table->id();
-            $table->text('column1');
-            $table->text('column2');
-            $table->text('column3');
-            $table->text('column4');
-            $table->text('column5');
-            $table->text('column8');
-            $table->text('column9');
-            $table->text('column10');
-            $table->timestamp('failed_at')->useCurrent();
+            $table->name('team_name');
+            $table->text('pts');
+            $table->text('p');
+            $table->text('w');
+            $table->text('d');
+            $table->text('l');
+            $table->text('gd');
+            $table->timestamps();
         });
 
-        Schema::create('Games', function (Blueprint $table) {
+        Schema::create('4weekmatchresult', function (Blueprint $table) {
             $table->id();
-            $table->text('column1');
-            $table->text('column2');
-            $table->text('column3');
-            $table->text('column4');
-            $table->text('column5');
-            $table->text('column8');
-            $table->text('column9');
-            $table->text('column10');
-            $table->timestamp('failed_at')->useCurrent();
+            $table->name('?');
+            $table->text('pts');
+            $table->text('p');
+            $table->text('w');
+            $table->text('d');
+            $table->text('l');
+            $table->text('gd');
+            $table->timestamps();
         });
+
     }
 
     /**

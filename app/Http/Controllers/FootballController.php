@@ -1,6 +1,9 @@
 <?php
+
 namespace App\Http\Controllers;
 
+use App\Models\Teams;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
@@ -16,7 +19,6 @@ class FootballController extends Controller
     {
 
         $arr = [];
-
         $result = ['name' => 'Abigail', 'state' => 'CA'];
 
         return response()->json($result);
@@ -24,18 +26,23 @@ class FootballController extends Controller
 
     public function playall()
     {
+        $generatefakedata = []; // 1 week
 
+        $teams = new Teams();
+        $teams->save($generatefakedata);
+        $teams->playall();
+        return view('result', $teams);
     }
 
     public function nextweek()
     {
+        $generatefakedata = []; // 6 week
 
-    }
+        $teams = new Teams();
+        $teams->nextweek();
+        $teams->save($generatefakedata);
 
-    public function getdatafromlink()
-    {
-        $link = 'https://www.premierleague.com/tables?team=FIRST';
-        $data = file_get_contents($link);
+        return view('result', $teams);
     }
 
 }

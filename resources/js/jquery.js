@@ -1,14 +1,14 @@
-$('#playall').onclick(function () {
-
+$('#play-all').click( function () {
+    alert("playall");
     $.ajax({
         url: "/play-button",
         context: document.body
     }).done(function (result) {
         console.log(result);
     });
-
 });
-$('#nextweek').onclick(function () {
+$('#next-week').click( function () {
+    alert("nextweek");
     $.ajax({
         url: "/play-next",
         context: document.body
