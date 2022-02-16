@@ -1,8 +1,8 @@
 <?php
 namespace App\Http\Controllers;
 
-use http\Env\Response;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Http\File;
 
 class FootballController extends Controller
