@@ -13,7 +13,8 @@ use App\Http\Controllers\FootballController;
 |
 */
 
-
+echo "echo";
+die("ed");
 Route::get('/',function (){
     return "page";
 });
